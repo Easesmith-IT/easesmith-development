@@ -1,0 +1,51 @@
+import { Separator } from "@/components/ui/separator";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Results } from "./results";
+import { Websites } from "./websites";
+export const WebsitesAndResults = () => {
+  return (
+    <div className="bg-(--color-para) py-10">
+      <div className="flex items-center">
+        <div className="w-[35%]"></div>
+        <div className="bg-[#F9FDD5] rounded-full px-10 py-4 w-auto inline-flex gap-1.5 font-black text-4xl">
+          <span className="text-(--color-easesmith)">Real</span>{" "}
+          <span className="text-(--color-para)">Work</span>
+        </div>
+        <div className="bg-[#F9FDD5] h-0.5 w-full flex-1"></div>
+      </div>
+      <p className="text-white font-bold text-2xl text-center my-5">from</p>
+      <div className="flex items-center">
+        <div className="bg-[#F9FDD5] h-0.5 w-full flex-1"></div>
+        <div className="bg-[#F9FDD5] rounded-full px-10 py-4 w-auto inline-flex gap-1.5 font-black text-4xl">
+          <span className="text-(--color-easesmith)">Real</span>{" "}
+          <span className="text-(--color-para)">clients</span>
+        </div>
+        <div className="w-[35%]"></div>
+      </div>
+
+      <Tabs defaultValue="websites" className="w-full mt-20 container mx-auto">
+        <TabsList className="mx-auto bg-(--color-para)">
+          <TabsTrigger
+            value="websites"
+            className="px-20 py-12 data-[state=active]:bg-(--color-easesmith) data-[state=inactive]:bg-(--color-para) text-2xl font-bold data-[state=inactive]:text-white rounded-b-none mb-8"
+          >
+            Websites
+          </TabsTrigger>
+          <TabsTrigger
+            value="results"
+            className="px-20 py-12 data-[state=active]:bg-(--color-easesmith) data-[state=inactive]:bg-(--color-para) text-2xl font-bold data-[state=inactive]:text-white rounded-b-none mb-8"
+          >
+            Results
+          </TabsTrigger>
+        </TabsList>
+        <Separator className="bg-(--color-easesmith) data-[orientation=horizontal]:h-1.5" />
+        <TabsContent className="w-full" value="websites">
+          <Websites />
+        </TabsContent>
+        <TabsContent className="w-full" value="results">
+          <Results />
+        </TabsContent>
+      </Tabs>
+    </div>
+  );
+};
