@@ -4,18 +4,18 @@ import guarantees from "@/data/guarantees.json";
 
 export const Guarantees = () => {
   return (
-    <div className="container mx-auto py-20">
-      <h2 className="text-3xl text-(--color-para) text-center font-bold">
+    <div className="container mx-auto py-10 md:py-20">
+      <h2 className="md:text-3xl text-(--color-para) max-w-180 mx-auto md:text-center font-bold px-6">
         Here’s exactly what we do to{" "}
-        <span className="text-(--color-easesmith) underline font-black">
+        <span className="text-(--color-easesmith) text-xl md:text-4xl underline font-black">
           Guarantee
         </span>{" "}
-        <br /> better conversions so that you can <br />
-        <span className="text-(--color-easesmith) italic font-black text-5xl">
+        better conversions so that you can{" "}
+        <span className="text-(--color-easesmith) italic font-black text-2xl md:text-5xl">
           Make More Money
         </span>
       </h2>
-      <div className="flex gap-5 mt-10">
+      <div className="flex flex-col md:flex-row gap-5 mt-10 px-6">
         {guarantees.map((reason, index) => (
           <Guarantee
             key={index}

@@ -40,7 +40,7 @@ export const Websites = () => {
       <div className="flex justify-center items-center mt-10">
         <Button
           onClick={() => setShowMore(!showMore)}
-          className="px-8 py-5.5 text-base font-semibold rounded-sm border-2 border-transparent hover:bg-(--color-para) hover:border-(--color-easesmith) hover:text-(--color-easesmith)"
+          className="px-14 md:px-8 py-5.5 md:text-base font-semibold rounded-sm border-2 border-transparent hover:bg-(--color-para) hover:border-(--color-easesmith) hover:text-(--color-easesmith)"
         >
           {showMore ? " Show less" : " Show more"}
         </Button>

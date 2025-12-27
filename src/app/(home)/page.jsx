@@ -1,4 +1,5 @@
 import { Companies } from "@/components/sections/companies";
+import { CTAButton } from "@/components/sections/CTA-button";
 import { FistFightALion } from "@/components/sections/fist-fight-lion/fist-fight-lion";
 import { FreeBonuses } from "@/components/sections/free-bonuses/free-bonuses";
 import { Guarantees } from "@/components/sections/guarantee/guarantees";
@@ -18,6 +19,7 @@ export default function Home() {
       <Guarantees />
       <FreeBonuses />
       <FistFightALion />
+      <CTAButton />
     </section>
   );
 }
