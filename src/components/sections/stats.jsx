@@ -1,7 +1,23 @@
+import {motion} from "motion/react"
+
 export const Stats = () => {
   return (
     <div className="bg-(--color-easesmith) px-5 py-12">
-      <div className="max-w-4xl mx-auto flex justify-between items-center gap-5">
+      <motion.div
+        initial={{ opacity: 0, x: 0, scale: 0.8 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          scale: 1,
+        }}
+        transition={{
+          duration: 0.6,
+          ease: "easeOut",
+          delay: 0.05,
+        }}
+        viewport={{ once: true }}
+        className="max-w-4xl mx-auto flex justify-between items-center gap-5"
+      >
         <div className="flex flex-col items-center">
           <h4 className="text-3xl md:text-5xl font-bold text-(--color-para)">
             53+
@@ -26,7 +42,7 @@ export const Stats = () => {
             Average CVR
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

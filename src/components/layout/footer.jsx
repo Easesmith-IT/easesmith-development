@@ -1,10 +1,26 @@
+"use client";
+
+import { motion } from "motion/react";
 import Image from "next/image";
 import { Button } from "../ui/button";
-import { Instagram, InstagramIcon } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#FAFAFA] py-14 px-5">
+    <motion.footer
+      initial={{ opacity: 0, y: 80, scale: 0.8 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        scale: 1,
+      }}
+      transition={{
+        duration: 0.6,
+        ease: "easeOut",
+        delay: 0.05,
+      }}
+      viewport={{ once: true }}
+      className="bg-[#FAFAFA] py-14 px-5"
+    >
       <Image
         src="/images/logo-black.svg"
         alt="Logo"
@@ -24,6 +40,6 @@ export const Footer = () => {
           Let&apos;s Talk
         </Button>
       </div>
-    </footer>
+    </motion.footer>
   );
 };

@@ -1,3 +1,5 @@
+"use client";
+
 import { Companies } from "@/components/sections/companies";
 import { CTAButton } from "@/components/sections/CTA-button";
 import { FistFightALion } from "@/components/sections/fist-fight-lion/fist-fight-lion";

@@ -2,26 +2,42 @@ import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Results } from "./results";
 import { Websites } from "./websites";
+import { motion } from "motion/react";
+
 export const WebsitesAndResults = () => {
   return (
-    <div className="bg-(--color-para) py-10">
-      <div className="flex items-center">
+    <div className="bg-(--color-para) py-10 overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, x: 80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="flex items-center"
+      >
         <div className="w-[10%] md:w-[35%]"></div>
         <div className="bg-[#F9FDD5] rounded-full px-10 py-4 w-auto inline-flex gap-1.5 font-black text-2xl lg:text-4xl">
           <span className="text-(--color-easesmith)">Real</span>{" "}
           <span className="text-(--color-para)">Work</span>
         </div>
         <div className="bg-[#F9FDD5] h-0.5 w-full flex-1"></div>
-      </div>
+      </motion.div>
+
       <p className="text-white font-bold text-2xl text-center my-5">from</p>
-      <div className="flex items-center">
+
+      <motion.div
+        initial={{ opacity: 0, x: -80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="flex items-center"
+      >
         <div className="bg-[#F9FDD5] h-0.5 w-full flex-1"></div>
         <div className="bg-[#F9FDD5] rounded-full px-10 py-4 w-auto inline-flex gap-1.5 font-black text-2xl lg:text-4xl">
           <span className="text-(--color-easesmith)">Real</span>{" "}
           <span className="text-(--color-para)">clients</span>
         </div>
         <div className="w-[10%] md:w-[35%]"></div>
-      </div>
+      </motion.div>
 
       <Tabs
         defaultValue="websites"

@@ -1,10 +1,6 @@
-"use client";
-
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Check } from "lucide-react";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 export const Hero = () => {
   return (
@@ -17,8 +13,9 @@ export const Hero = () => {
           {/* LEFT CONTENT */}
           <motion.div
             initial={{ opacity: 0, x: -80 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, ease: "linear" }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <h1 className="md:text-2xl font-bold leading-5">
               <span className="text-(--color-easesmith) underline">
@@ -76,9 +73,9 @@ export const Hero = () => {
           {/* RIGHT CONTENT */}
           <motion.div
             initial={{ opacity: 0, x: 80 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, ease: "linear" }}
-            className="relative flex justify-center"
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <Image
               src="/images/hero-img.png"
