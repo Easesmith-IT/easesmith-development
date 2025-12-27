@@ -3,12 +3,25 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "motion/react";
 
 export const Websites = () => {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, x: 0, }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+      }}
+      transition={{
+        duration: 0.6,
+        ease: "easeOut",
+        delay: 0.05,
+      }}
+      // viewport={{ once: true }}
+    >
       <div className="space-y-6">
         <Image
           src="/images/websites/1.webp"
@@ -45,6 +58,6 @@ export const Websites = () => {
           {showMore ? " Show less" : " Show more"}
         </Button>
       </div>
-    </div>
+    </motion.div>
   );
 };
