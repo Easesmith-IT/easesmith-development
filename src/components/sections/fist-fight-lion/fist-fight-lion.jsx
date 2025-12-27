@@ -118,10 +118,7 @@ export const FistFightALion = () => {
         <p className="text-[#D53D3D] uppercase font-bold text-center md:text-lg">
           before the bonuses disappear
         </p>
-        <p className="text-[#D53D3D] uppercase font-bold text-center md:text-lg my-3 mt-1">
-          (We only work with F&B brands doing ₹10+L in Monthly revenue)
-        </p>
-
+        
         <div className="mt-8 flex justify-center items-center">
           <Button className="px-8 py-5.5 md:text-base font-semibold rounded-sm border-2 border-transparent hover:bg-(--color-para) hover:text-(--color-easesmith)">
             <Link
