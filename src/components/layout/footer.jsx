@@ -4,7 +4,7 @@ import { Instagram, InstagramIcon } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#FAFAFA] py-10 md:py-14 px-5">
+    <footer className="bg-[#FAFAFA] py-14 px-5">
       <Image
         src="/images/logo-black.svg"
         alt="Logo"
