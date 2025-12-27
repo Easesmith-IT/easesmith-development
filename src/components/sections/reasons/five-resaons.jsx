@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Reason } from "./reason";
 import { motion } from "motion/react";
 import reasons from "@/data/reasons.json";
+import Link from "next/link";
 
 export const FiveReasons = () => {
   return (
@@ -99,7 +100,12 @@ export const FiveReasons = () => {
           viewport={{ once: true }}
         >
           <Button className="px-8 py-5.5 md:text-base font-semibold rounded-sm border-2 border-transparent hover:bg-(--color-para) hover:text-(--color-easesmith)">
-            Increase Your Conversions Today
+            <Link
+              target="_blank"
+              href="https://calendly.com/mavyakunal/business-call"
+              >
+              Increase Your Conversions Today
+            </Link>
           </Button>
         </motion.div>
       </div>

@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -22,12 +23,19 @@ export const Footer = () => {
       className="bg-[#FAFAFA] py-14 px-5"
     >
       <Image
-        src="/images/logo-black.svg"
+        src="/images/easesmith-logo.png"
         alt="Logo"
         width={300}
-        height={200}
-        className="mx-auto w-52 h-24 md:w-72 md:h-48"
+        height={100}
+        className="mx-auto "
       />
+      {/* <Image
+        src="/images/easesmith-logo.png"
+        alt="Easesmith"
+        width={64}
+        height={56}
+        className="h-14 w-16 mx-auto"
+      /> */}
 
       <div className="flex justify-center items-center gap-5 mt-5">
         <Image src="/images/insta.svg" alt="Insta" width={30} height={30} />
@@ -37,7 +45,12 @@ export const Footer = () => {
 
       <div className="flex justify-center items-center mt-6">
         <Button className="px-10 md:px-16 py-5 md:py-5.5 md:text-base font-semibold rounded-sm border-2 border-transparent hover:border-(--color-easesmith) hover:bg-white hover:text-(--color-easesmith)">
-          Let&apos;s Talk
+          <Link
+            target="_blank"
+            href="https://calendly.com/mavyakunal/business-call"
+          >
+            Let&apos;s Talk
+          </Link>
         </Button>
       </div>
     </motion.footer>

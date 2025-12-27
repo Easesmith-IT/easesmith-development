@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
     <section className="w-full bg-white md:py-6">
       <div className="mx-auto container px-6 flex-col flex items-center md:items-start">
-        <div className="inline-flex sm:-ml-10 md:ml-0 rounded-md bg-[#D53D3D] px-4 py-1 md:text-lg font-bold text-white mb-4">
+        <div className="sm:-ml-10 md:ml-0 hidden rounded-md bg-[#D53D3D] px-4 py-1 md:text-lg font-bold text-white mb-4">
           We only work with F&B brands doing ₹10L in MRR
         </div>
         <div className="flex flex-col-reverse md:grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -65,7 +66,12 @@ export const Hero = () => {
 
             <div className="mt-8">
               <Button className="px-8 py-5.5 md:text-base font-semibold rounded-sm border-2 border-transparent hover:bg-(--color-para) hover:text-(--color-easesmith)">
-                Increase Your Conversions Today
+                <Link
+                  target="_blank"
+                  href="https://calendly.com/mavyakunal/business-call"
+                  >
+                  Increase Your Conversions Today
+                </Link>
               </Button>
             </div>
           </motion.div>

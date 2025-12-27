@@ -10,7 +10,7 @@ export const Websites = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: 0, }}
+      initial={{ opacity: 0, x: 0 }}
       whileInView={{
         opacity: 1,
         x: 0,
@@ -31,7 +31,20 @@ export const Websites = () => {
           className="bg-[#9FE6B1] rounded-3xl px-5 py-6 w-full"
         />
         {showMore && (
-          <>
+          <motion.div
+            initial={{ opacity: 0, x: 0 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{
+              duration: 0.6,
+              ease: "easeOut",
+              delay: 0.05,
+            }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
             <Image
               src="/images/websites/2.webp"
               alt="Website1"
@@ -46,7 +59,7 @@ export const Websites = () => {
               height={400}
               className="bg-[#9FE6B1] rounded-3xl px-5 py-6 w-full"
             />
-          </>
+          </motion.div>
         )}
       </div>
 

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 export const FistFightALion = () => {
   return (
@@ -40,8 +41,16 @@ export const FistFightALion = () => {
         </p>
 
         <div className="mt-8 flex justify-center items-center">
-          <Button className="px-8 py-5.5 md:text-base font-semibold rounded-sm border-2 border-transparent hover:bg-(--color-para) hover:text-(--color-easesmith)">
-            Increase Your Conversions Today
+          <Button
+            asChild
+            className="px-8 py-5.5 md:text-base font-semibold rounded-sm border-2 border-transparent hover:bg-(--color-para) hover:text-(--color-easesmith)"
+          >
+            <Link
+              target="_blank"
+              href="https://calendly.com/mavyakunal/business-call"
+            >
+              Increase Your Conversions Today
+            </Link>
           </Button>
         </div>
       </motion.div>
@@ -115,7 +124,12 @@ export const FistFightALion = () => {
 
         <div className="mt-8 flex justify-center items-center">
           <Button className="px-8 py-5.5 md:text-base font-semibold rounded-sm border-2 border-transparent hover:bg-(--color-para) hover:text-(--color-easesmith)">
-            Increase Your Conversions Today
+            <Link
+              target="_blank"
+              href="https://calendly.com/mavyakunal/business-call"
+            >
+              Increase Your Conversions Today
+            </Link>
           </Button>
         </div>
       </motion.div>

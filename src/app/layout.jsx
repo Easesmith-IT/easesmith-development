@@ -1,16 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -24,7 +12,7 @@ export const metadata = {
   title: "Easesmith Shopify",
   description: "Easesmith Shopify Website",
   icons: {
-    icon: "/easesmith.svg",
+    icon: "/images/easesmith.svg",
   },
 };
 
