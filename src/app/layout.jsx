@@ -9,8 +9,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Easesmith Shopify",
-  description: "Easesmith Shopify Website",
+  title: "Easesmith",
+  description: "Easesmith Website",
   icons: {
     icon: "/images/easesmith.svg",
   },
