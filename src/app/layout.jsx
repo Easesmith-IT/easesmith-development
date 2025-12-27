@@ -23,16 +23,15 @@ const montserrat = Montserrat({
 export const metadata = {
   title: "Easesmith Shopify",
   description: "Easesmith Shopify Website",
+  icons: {
+    icon: "/easesmith.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${montserrat.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${montserrat.variable} antialiased`}>{children}</body>
     </html>
   );
 }
