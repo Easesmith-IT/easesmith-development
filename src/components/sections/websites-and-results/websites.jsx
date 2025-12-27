@@ -11,7 +11,7 @@ export const Websites = () => {
     <div>
       <div className="space-y-6">
         <Image
-          src="/images/websites/website1.png"
+          src="/images/websites/1.webp"
           alt="Website1"
           width={500}
           height={400}
@@ -20,14 +20,14 @@ export const Websites = () => {
         {showMore && (
           <>
             <Image
-              src="/images/websites/website2.png"
+              src="/images/websites/2.webp"
               alt="Website1"
               width={500}
               height={400}
               className="bg-[#9FE6B1] rounded-3xl px-5 py-6 w-full"
             />
             <Image
-              src="/images/websites/website3.png"
+              src="/images/websites/3.webp"
               alt="Website1"
               width={500}
               height={400}
