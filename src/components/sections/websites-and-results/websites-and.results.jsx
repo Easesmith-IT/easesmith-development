@@ -50,12 +50,12 @@ export const WebsitesAndResults = () => {
           >
             Websites
           </TabsTrigger>
-          <TabsTrigger
+          {/* <TabsTrigger
             value="results"
             className="px-10 py-4 lg:px-20 lg:py-8 data-[state=active]:bg-(--color-easesmith) data-[state=inactive]:bg-(--color-para) text-base lg:text-2xl font-bold data-[state=inactive]:text-white rounded-b-none"
           >
             Results
-          </TabsTrigger>
+          </TabsTrigger> */}
         </TabsList>
         <Separator className="bg-(--color-easesmith) mb-5 data-[orientation=horizontal]:h-1.5" />
         <TabsContent className="w-full" value="websites">

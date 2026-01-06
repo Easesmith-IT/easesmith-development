@@ -6,7 +6,7 @@ import Link from "next/link";
 export const Hero = () => {
   return (
     <section className="w-full bg-white md:py-6">
-      <div className="mx-auto container px-6 flex-col flex items-center md:items-start">
+      <div className="mx-auto container px-6 flex-col flex items-center">
         <div className="sm:-ml-10 md:ml-0 hidden rounded-md bg-[#D53D3D] px-4 py-1 md:text-lg font-bold text-white mb-4">
           We only work with F&B brands doing ₹10L in MRR
         </div>
