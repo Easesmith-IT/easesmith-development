@@ -70,7 +70,7 @@ export const FistFightALion = () => {
         viewport={{ once: true }}
       >
         <Image
-          src="/images/lion.png"
+          src="/images/lion-1.png"
           alt="Lion"
           width={500}
           height={700}
